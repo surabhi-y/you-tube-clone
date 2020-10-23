@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/you-tube-clone/static/css/main.33600e52.chunk.css",
+    "main.js": "/you-tube-clone/static/js/main.8f0f8368.chunk.js",
+    "main.js.map": "/you-tube-clone/static/js/main.8f0f8368.chunk.js.map",
+    "runtime-main.js": "/you-tube-clone/static/js/runtime-main.4b473d5d.js",
+    "runtime-main.js.map": "/you-tube-clone/static/js/runtime-main.4b473d5d.js.map",
+    "static/js/2.4cf5582c.chunk.js": "/you-tube-clone/static/js/2.4cf5582c.chunk.js",
+    "static/js/2.4cf5582c.chunk.js.map": "/you-tube-clone/static/js/2.4cf5582c.chunk.js.map",
+    "index.html": "/you-tube-clone/index.html",
+    "precache-manifest.ed36d68e8f49d26d62f3c4067cb366c9.js": "/you-tube-clone/precache-manifest.ed36d68e8f49d26d62f3c4067cb366c9.js",
+    "service-worker.js": "/you-tube-clone/service-worker.js",
+    "static/css/main.33600e52.chunk.css.map": "/you-tube-clone/static/css/main.33600e52.chunk.css.map",
+    "static/js/2.4cf5582c.chunk.js.LICENSE.txt": "/you-tube-clone/static/js/2.4cf5582c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b473d5d.js",
+    "static/js/2.4cf5582c.chunk.js",
+    "static/css/main.33600e52.chunk.css",
+    "static/js/main.8f0f8368.chunk.js"
+  ]
+}
