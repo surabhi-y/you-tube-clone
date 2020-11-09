@@ -5,6 +5,7 @@
     padding:20px;
     position: sticky;
     top:0;
+    background-color: white;
 }
 
 .header__logo{
@@ -14,11 +15,13 @@
 }
 
 .header__input{
+    position: relative;
     display: flex;
     width: 40%;
     border:1px solid black;
     border-radius: 2px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__icons{
@@ -30,16 +33,26 @@
     margin-right: 10px;
 }
 
-.header__input>input{
-    flex:1;
+input{
+    flex-grow: 1;
+    width: 300px; 
     border:none;
-  
+    padding:10px;
+}
+input:focus{
+    outline: none;
 }
 .header__input_button{
   width: 50px!important;
-  
   background-color: #fafafa;
+  padding:5px;
   border-left:1px solid lightgray;
   color: grey;
 
+
+}
+
+.search_icon{
+    position: absolute;
+  right: 0;
 }

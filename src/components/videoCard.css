@@ -1,12 +1,12 @@
 .videoCard{
-    margin-bottom: 40px;
+    margin:10px 10px  40px;
     width:270px;
 }
 
 .videoCard__thumbnail{
-    height:140px;
+    height:200px;
     width: auto;
-    border: 1px solid black;
+   
 }
 
 .videoCard__info{

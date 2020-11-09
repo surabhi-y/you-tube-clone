@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './header.css';
 import VideoCallSharpIcon from '@material-ui/icons/VideoCallSharp';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -9,13 +9,10 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar';
 import {Link} from 'react-router-dom';
 
-
-function Header() {
-    const [inputSearch,setInoutSearch]=useState('');
-
-function handler(e){
-            setInoutSearch(e.target.value);
-}
+function Header({
+    inputSearch, setInoutSearch, handler, fetchData,
+}) {
+ 
 
     return (
         <div className='header'>
@@ -25,17 +22,23 @@ function handler(e){
              src='youtube.svg' alt=""
              />
              <div className="header__input">
-             
+             <form>
              <input 
              onChange={handler}
               value={inputSearch}
                placeholder="search" 
                type="text"/>
-            
-
+            </form>
+            <div className="search_icon">
              <Link to={`/search/${inputSearch}`}>
-             <SearchIcon className="header__intputButton"/>
+             <SearchIcon 
+             className="header__input_button"
+            onClick={fetchData}
+
+
+             />
              </Link>
+             </div>
              </div>
             
 
@@ -47,9 +50,6 @@ function handler(e){
              src="" alt=""
              />
              </div>
-            
-             
-             
         </div>
     )
 }

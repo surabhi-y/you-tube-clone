@@ -2,14 +2,22 @@
     display: flex;
     margin-bottom:20px;
     max-width:700px;
+  
+}
+.videoRow__image{
+
+    width: 500px;
+    align-self: center;
+    border: 2px border yellow;
+  
+
+}
+.videoRow__image>img{
+ width: 100%;
 }
 
-.VideoRow>img{
-    object-fit: contain;
-    width: 246px;
-    height: 138px;
-}
 .videoRow__text{
+  
     margin-left:14px;
 }
 

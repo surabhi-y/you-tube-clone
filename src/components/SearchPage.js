@@ -1,37 +1,27 @@
 import React from 'react';
 import './searchpage.css';
 import TuneOutlinedIcon from '@material-ui/icons/TuneOutlined';
-import ChannelRow from './ChannelRow';
 import VideoRow from './VideoRow';
 
 
-function SearchPage() {
+function SearchPage({data}) {
     return (
         <div className="searchPage">
             <div className="searchPage__filter">
                 <TuneOutlinedIcon/>
                 <h2>FILTER</h2>
             </div>
-            <hr/>
-
-            <ChannelRow
-            image="/images/mqdefault(2).webp"
-            ChannelRow
-            verified
-            subs
-            noOfVideos
-            description 
-            />
-            <hr/>
-
-            <VideoRow
-            image="images/mqdefault(2).webp"
-            channel="clever programing"
+           
+            {data?.items?.map((item, index) => {
+          return ( <VideoRow
+            image={item.snippet.thumbnails.default.url}
+            channel={item.snippet.channelTitle}
             views="1.4M"
             subs="656k"
-            description="dfadjfamf nijafij"
-            title="Watch: World War II bomb explodes underwater in Poland, no injuries"
-            timestamp="6 days ago"/>
+            description={item.snippet.description}
+            title={item.snippet.title}
+            timestamp={item.snippet.publishedAt}/>)
+          })}
 
         </div>
     )
